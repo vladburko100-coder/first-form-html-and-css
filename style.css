@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac:wght@100..900&family=Playwrite+CZ&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background: url(background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  background-color: red;
+  width: 500px;
+  border-radius: 25px;
+  padding: 35px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(67, 67, 67, 0.3);
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.input-text {
+  width: 100%;
+  height: 45px;
+  margin: 20px 0;
+  border-radius: 20px;
+  position: relative;
+}
+.input-text input {
+  background: transparent;
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+  border: 2px solid white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 15px;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.input-text input:active {
+  background-color: white;
+}
+.input-text input:focus {
+  background-color: white;
+  color: gray;
+}
+.input-text input::placeholder {
+  font-size: 16px;
+  margin: 4px;
+  color: white;
+}
+i {
+  position: absolute;
+  right: 15px;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.input-text:focus-within i {
+  color: gray;
+}
+.wrapper .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+.input-box label input {
+  margin-right: 5px;
+  accent-color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-in;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  text-align: center;
+}
+a:hover {
+  color: #9c9c9c;
+}
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  transition: 0.3s all ease;
+}
+button:hover {
+  transform: scale(1.02);
+}
+button:active {
+  background-color: #d6ffdd;
+  transform: scale(1);
+}
+#checkbox {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
